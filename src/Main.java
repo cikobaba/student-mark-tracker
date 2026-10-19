@@ -34,7 +34,7 @@ public class Main {
         double average1 = calculateAverage(studentMarks[0]);
         double average2 = calculateAverage(studentMarks[1]);
 
-        System.out.printf("%s: %.2f - %s%n", studentNames[0], average1, getEvaluation(average1));
-        System.out.printf("%s: %.2f - %s%n", studentNames[1], average2, getEvaluation(average2));
+        System.out.println(studentNames[0] + ": " + String.format("%.2f", average1) + " - " + getEvaluation(average1));
+        System.out.println(studentNames[1] + ": " + String.format("%.2f", average2) + " - " + getEvaluation(average2));
     }
 }
